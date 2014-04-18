@@ -1,0 +1,49 @@
+{
+    "dependencies": [
+        {
+            "interfaces": ["ride\\library\\form\\row\\Row", "ride\\library\\form\\row\\WysiwygRow"],
+            "class": "ride\\library\\form\\row\\CkeditorWysiwygRow",
+            "id": "wysiwyg",
+            "calls": [
+                {
+                    "method": "setLocale",
+                    "arguments": [
+                        {
+                            "name": "locale",
+                            "type": "call",
+                            "properties": {
+                                "interface": "ride\\library\\i18n\\I18n",
+                                "method": "getLocale"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setBaseUrl",
+                    "arguments": [
+                        {
+                            "name": "baseUrl",
+                            "type": "call",
+                            "properties": {
+                                "interface": "ride\\library\\mvc\\Request",
+                                "method": "getBaseScript"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setProperties",
+                    "arguments": [
+                        {
+                            "name": "properties",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "ckeditor"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
