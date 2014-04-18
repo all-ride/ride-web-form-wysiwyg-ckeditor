@@ -1,0 +1,26 @@
+{
+    "ckeditor": {
+        "toolbar": [
+            [
+                "Bold",
+                "Italic",
+                "Format",
+                "-",
+                "BulletedList",
+                "NumberedList",
+                "Outdent",
+                "Indent",
+                "-",
+                "Link",
+                "Unlink",
+                "Anchor",
+                "-",
+                "PasteText",
+                "PasteFromWord",
+                "-",
+                "Source"
+            ]
+        ],
+        "format_tags": "p;h1;h2;h3;h4;h5"
+    }
+}
