@@ -30,7 +30,14 @@ class CkeditorWysiwygRow extends WysiwygRow {
 
         $json = json_encode($properties);
 
-        return array('CKEDITOR.replace("' . $this->widget->getId() . '", ' . $json . ');');
+        $widgetId = $this->widget->getId();
+
+        return array(
+            'CKEDITOR.replace("' . $widgetId . '", ' . $json . ');',
+            '$("#' . $widgetId . '").change(function() {
+                CKEDITOR.instances["' . $widgetId . '"].setData($(this).val());
+            });',
+        );
     }
 
 }
