@@ -14,7 +14,7 @@ class CkeditorWysiwygRow extends WysiwygRow {
     public function getJavascripts() {
         return array(
             '<script type="text/javascript">var CKEDITOR_BASEPATH = "' . $this->baseUrl . '/ckeditor/";</script>',
-            'ckeditor/ckeditor.js',
+            $this->baseUrl . '/ckeditor/ckeditor.js',
         );
     }
 
