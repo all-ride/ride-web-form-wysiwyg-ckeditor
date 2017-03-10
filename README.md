@@ -2,6 +2,15 @@
 
 This module converts all ```wysiwyg``` form rows into a CKEditor instance.
 
+## Use Mathjax
+
+Override the ckeditor config in parameters.json and add "Mathjax" in the toolbar.
+
+Make sure that js lib is added in the frontend.
+```
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML"></script>
+```
+
 ## Related Modules 
 
 - [ride/app](https://github.com/all-ride/ride-app)
