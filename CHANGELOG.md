@@ -7,3 +7,7 @@
 ### Updated
 - Update changelog
 - Mathjax usage in readme
+
+## [1.1.2] - 2017-03-10
+### Updated
+- Remove link advanced tab in default config
